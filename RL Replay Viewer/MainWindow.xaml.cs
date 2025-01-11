@@ -41,7 +41,13 @@ namespace RL_Replay_Viewer
 
             if (openFileDialog.ShowDialog() == true)
             {
-                SelectedFilePath.Text = openFileDialog.FileName;
+                string selectedFilePath = openFileDialog.FileName;
+
+                ReplayStats replayStatsPage = new ReplayStats(selectedFilePath);
+
+                var frame = new Frame();
+                frame.Content = replayStatsPage;
+                this.Content = frame;
             }
         }
 

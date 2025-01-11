@@ -6,10 +6,9 @@
         xmlns:local="clr-namespace:RL_Replay_Viewer"
         mc:Ignorable="d"
         Title="Aitaneuh's Replay Viewer" Height="800" Width="1600">
-    <Grid>
+    <Grid Background="#FF1E1E1E">
         <Label Content="Aitaneuh's Replay Viewer" HorizontalAlignment="Center" Margin="0,83,0,0" VerticalAlignment="Top" FontSize="72" FontFamily="Segoe UI Black" Foreground="White"/>
-        <TextBlock TextWrapping="WrapWithOverflow" Margin="385,189,385,490" FontSize="20" TextAlignment="Center"><Run Text="This tool was made to be able to open a Rocket League .replay file without having to open Rocket League and look at the stats from there."/></TextBlock>
-        <Button x:Name="btn_select_file" Content="Select Replay File" HorizontalAlignment="Center" Margin="0,484,0,0" VerticalAlignment="Top" Height="120" Width="340" FontSize="36" Click="btn_select_file_Click"/>
-        <TextBlock x:Name="SelectedFilePath" HorizontalAlignment="Center" Margin="0,658,0,0" TextWrapping="Wrap" Text="No file selected yet." VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock TextWrapping="WrapWithOverflow" Margin="385,189,385,490" FontSize="20" TextAlignment="Center" Foreground="White"><Run Text="This tool was made to open a Rocket League .replay file without having to open Rocket League and look at the stats from there."/></TextBlock>
+        <Button x:Name="btn_select_file" Content="Select Replay File" HorizontalAlignment="Center" Margin="0,484,0,0" VerticalAlignment="Top" Height="120" Width="340" FontSize="36" Click="btn_select_file_Click" Background="#FF333333" BorderBrush="{x:Null}" Foreground="White"/>
     </Grid>
 </Window>
